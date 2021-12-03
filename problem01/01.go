@@ -1,7 +1,7 @@
 package problem01
 
 import (
-	"github/samtoffler/advent-of-code-2021/helpers"
+	"github.com/samtoffler/advent-of-code-2021/helpers"
 )
 
 var input []int = helpers.ParseFileAsInts(helpers.GetInputPath(("problem01")))

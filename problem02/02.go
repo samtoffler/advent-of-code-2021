@@ -1,9 +1,10 @@
 package problem02
 
 import (
-	"github/samtoffler/advent-of-code-2021/helpers"
 	"strconv"
 	"strings"
+
+	"github.com/samtoffler/advent-of-code-2021/helpers"
 )
 
 var input []string = helpers.ParseFileAsStrings(helpers.GetInputPath(("problem02")))

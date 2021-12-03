@@ -1,7 +1,7 @@
 ### Overview
 Solutions for [Advent of Code 2021](https://adventofcode.com/2021)
 
-Usage
+### Usage
 ```
 go run cmd/main.go --problem 1a
 ```
