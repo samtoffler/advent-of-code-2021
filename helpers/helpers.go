@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 	"strconv"
+	"strings"
 )
 
 func GetInputPath(folder string) string {
@@ -41,4 +42,37 @@ func ParseFileAsInts(path string) []int {
 	}
 
 	return res
+}
+
+func ParseFileAsArray(path string) []int {
+	fileAsStrings := ParseFileAsStrings(path)
+	var res []int
+	for _, elem := range strings.Split(fileAsStrings[0], ",") {
+		number, err := strconv.Atoi(elem)
+		if (err != nil) {
+			panic(err)
+		}
+		res = append(res, number)
+	}
+	return res
+}
+
+func FindMax(input []int) int{
+	max := input[0]
+	for _, num := range input {
+		if num > max {
+			max = num
+		}
+	}
+	return max
+}
+
+func FindMin(input []int) int {
+	min := input[0]
+	for _, num := range input {
+		if num < min {
+			min = num
+		}
+	}
+	return min
 }

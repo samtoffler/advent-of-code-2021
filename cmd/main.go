@@ -10,6 +10,9 @@ import (
 	"github.com/samtoffler/advent-of-code-2021/problem04"
 	"github.com/samtoffler/advent-of-code-2021/problem05"
 	"github.com/samtoffler/advent-of-code-2021/problem06"
+	"github.com/samtoffler/advent-of-code-2021/problem07"
+	"github.com/samtoffler/advent-of-code-2021/problem08"
+	"github.com/samtoffler/advent-of-code-2021/problem09"
 )
 
 var (problemNum = flag.String("problem", "1a", "The problem to run"))
@@ -41,6 +44,18 @@ func main() {
 		fmt.Println(problem06.CountLanternfish(80))
 	case "6b":
 		fmt.Println(problem06.CountLanternfish(256))
+	case "7a":
+		fmt.Println(problem07.GetFuelCost(true))
+	case "7b":
+		fmt.Println(problem07.GetFuelCost(false))
+	case "8a":
+		fmt.Println(problem08.CountUniqueNumbers())
+	case "8b":
+		fmt.Println(problem08.DecodePatterns())
+	case "9a":
+		fmt.Println(problem09.CountRiskLevels())
+	case "9b":
+		fmt.Println(problem09.FindLargestBasins())
 	default:
 		fmt.Println("Unsolved problem")
 	}
