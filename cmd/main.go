@@ -55,7 +55,9 @@ func main() {
 	case "9a":
 		fmt.Println(problem09.CountRiskLevels())
 	case "9b":
-		fmt.Println(problem09.FindLargestBasins())
+		fmt.Println(problem09.FindLargestBasins(true))
+	case "9c":
+		fmt.Println(problem09.FindLargestBasins(false))
 	default:
 		fmt.Println("Unsolved problem")
 	}
