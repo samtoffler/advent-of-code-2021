@@ -13,6 +13,7 @@ import (
 	"github.com/samtoffler/advent-of-code-2021/problem07"
 	"github.com/samtoffler/advent-of-code-2021/problem08"
 	"github.com/samtoffler/advent-of-code-2021/problem09"
+	"github.com/samtoffler/advent-of-code-2021/problem10"
 )
 
 var (problemNum = flag.String("problem", "1a", "The problem to run"))
@@ -58,6 +59,10 @@ func main() {
 		fmt.Println(problem09.FindLargestBasins(true))
 	case "9c":
 		fmt.Println(problem09.FindLargestBasins(false))
+	case "10a":
+		fmt.Println(problem10.ScoreIllegalCharacters(true))
+	case "10b":
+		fmt.Println(problem10.ScoreIllegalCharacters(false))
 	default:
 		fmt.Println("Unsolved problem")
 	}
